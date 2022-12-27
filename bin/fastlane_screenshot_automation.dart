@@ -65,7 +65,7 @@ void main(List<String> args) async {
     if (isAndroid) {
       Process.runSync('bundle', ['exec', 'fastlane', 'supply', 'init'], workingDirectory: dir, runInShell: true);
     } else {
-      Process.runSync('bundle', ['exec', 'fastlane', 'init'], workingDirectory: dir, runInShell: true);
+      Process.runSync('bundle', ['exec', 'fastlane', 'deliver_init'], workingDirectory: dir, runInShell: true);
     }
   }
 }

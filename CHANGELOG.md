@@ -1,3 +1,7 @@
+## 0.0.8
+
+- Fix ios init delivery
+
 ## 0.0.7
 
 - Fix test package dependency

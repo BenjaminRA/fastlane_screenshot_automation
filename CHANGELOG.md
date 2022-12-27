@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Fix init deliver
+
 ## 0.0.4
 
 - Fix init deliver

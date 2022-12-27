@@ -1,5 +1,9 @@
 ## 0.0.5
 
+- Fix test package dependency
+
+## 0.0.5
+
 - Fix init deliver
 
 ## 0.0.4

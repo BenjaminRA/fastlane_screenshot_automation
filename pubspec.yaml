@@ -1,7 +1,6 @@
 name: fastlane_screenshot_automation
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Helper to setup fastlane on both android and ios projects
+version: 0.0.3
 repository: https://github.com/BenjaminRA/fastlane_screenshot_automation
 
 environment:

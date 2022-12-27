@@ -1,3 +1,7 @@
+## 0.1.0
+
+- Fix ios script codification
+
 ## 0.0.9
 
 - Fix ios package name

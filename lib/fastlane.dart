@@ -26,7 +26,7 @@ class Fastlane {
         ..writeAsStringSync(
           (isAndroid ? File('${await getPackagePath()}/assets/android/Fastfile') : File('${await getPackagePath()}/assets/ios/Fastfile'))
               .readAsStringSync()
-              .replaceAll('track: \'beta\',', pubspec['android_beta_track']),
+              .replaceAll('track: \'beta\',', "track: ${pubspec['android_beta_track']},"),
         );
     }
   }

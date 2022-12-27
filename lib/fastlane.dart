@@ -18,7 +18,7 @@ class Fastlane {
           (isAndroid ? File('${await getPackagePath()}/assets/android/Appfile') : File('${await getPackagePath()}/assets/ios/Appfile'))
               .readAsStringSync()
               .replaceAll('path/to/json_key_file', pubspec['android_json_key_file_path'])
-              .replaceAll('com.example.app', pubspec['android_package_name']),
+              .replaceAll('com.example.app', isAndroid ? pubspec['android_package_name'] : pubspec['ios_package_name']),
         );
 
       final fastFile = File('$dir/fastlane/Fastfile')
@@ -27,7 +27,7 @@ class Fastlane {
           (isAndroid ? File('${await getPackagePath()}/assets/android/Fastfile') : File('${await getPackagePath()}/assets/ios/Fastfile'))
               .readAsStringSync()
               .replaceAll('track: \'beta\',', "track: '${pubspec['android_beta_track']}',")
-              .replaceAll('com.example.app', pubspec['android_package_name']),
+              .replaceAll('com.example.app', isAndroid ? pubspec['android_package_name'] : pubspec['ios_package_name']),
         );
     }
   }

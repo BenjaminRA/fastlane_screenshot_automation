@@ -1,6 +1,6 @@
 name: fastlane_screenshot_automation
 description: Helper to setup fastlane on both android and ios projects
-version: 0.0.8
+version: 0.0.9
 repository: https://github.com/BenjaminRA/fastlane_screenshot_automation
 
 environment:
